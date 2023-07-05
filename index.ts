@@ -1,8 +1,9 @@
 const inputEl = document.getElementById("input-el");
 const outputEl = document.getElementById("output-el");
+const clipboardIcon = document.getElementById("clipboard-icon");
 
 const toBeshyFormat = (): void => {
-	outputEl!.textContent = (inputEl as HTMLInputElement).value.replace(
+	outputEl!.textContent = (inputEl as HTMLTextAreaElement).value.replace(
 		/ /g,
 		" 🤸‍♀️ "
 	);
