@@ -4,7 +4,7 @@ const outputEl = document.getElementById("output-el");
 const toBeshyFormat = (): void => {
 	outputEl!.textContent = (inputEl as HTMLInputElement).value.replace(
 		/ /g,
-		"🏃‍♂️"
+		" 🤸‍♀️ "
 	);
 };
 
