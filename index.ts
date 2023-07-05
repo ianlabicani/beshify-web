@@ -11,12 +11,11 @@ const toBeshyFormat = (): void => {
 };
 
 const copy = (): void => {
-	navigator.clipboard.writeText(outputEl!.textContent!).then(() => {
-		btnCopyEl!.textContent = "Na-copy 🤸‍♀️ na 🤸‍♀️ ng 🤸‍♀️ beshy 🤸‍♀️ ko.";
-		(btnCopyEl as HTMLButtonElement).disabled = true;
-		setTimeout(() => {
-			btnCopyEl!.textContent = "Copy 📋";
-			(btnCopyEl as HTMLButtonElement).disabled = false;
-		}, 3000);
-	});
+	navigator.clipboard.writeText(outputEl!.textContent!);
+	btnCopyEl!.textContent = "Na-copy 🤸‍♀️ na 🤸‍♀️ ng 🤸‍♀️ beshy 🤸‍♀️ ko.";
+	(btnCopyEl as HTMLButtonElement).disabled = true;
+	setTimeout(() => {
+		btnCopyEl!.textContent = "Copy 📋";
+		(btnCopyEl as HTMLButtonElement).disabled = false;
+	}, 3000);
 };

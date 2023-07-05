@@ -7,12 +7,11 @@ const toBeshyFormat = () => {
     outputEl.textContent = inputEl.value.replace(/ /g, " 🤸‍♀️ ");
 };
 const copy = () => {
-    navigator.clipboard.writeText(outputEl.textContent).then(() => {
-        btnCopyEl.textContent = "Na-copy 🤸‍♀️ na 🤸‍♀️ ng 🤸‍♀️ beshy 🤸‍♀️ ko.";
-        btnCopyEl.disabled = true;
-        setTimeout(() => {
-            btnCopyEl.textContent = "Copy 📋";
-            btnCopyEl.disabled = false;
-        }, 3000);
-    });
+    navigator.clipboard.writeText(outputEl.textContent);
+    btnCopyEl.textContent = "Na-copy 🤸‍♀️ na 🤸‍♀️ ng 🤸‍♀️ beshy 🤸‍♀️ ko.";
+    btnCopyEl.disabled = true;
+    setTimeout(() => {
+        btnCopyEl.textContent = "Copy 📋";
+        btnCopyEl.disabled = false;
+    }, 3000);
 };
